@@ -1,11 +1,11 @@
 package io.mohkeita.customerservice.model;
 
-import javax.persistence.Column;
-import javax.persistence.Id;
-import javax.persistence.Transient;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
+@Table(name = "CUSTOMER")
+@Entity
 public class Customer implements Serializable {
 
     @Id
