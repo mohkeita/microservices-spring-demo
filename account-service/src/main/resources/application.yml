@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: account-service
+  sleuth:
+    enabled: true
+  zipkin:
+    enabled: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+server:
+  port: 6060
+
+error:
+  whitelabel:
+    enabled: false
+
+spring.zipkin.baseUrl: http://localhost:9411/
